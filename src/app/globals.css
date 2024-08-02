@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #f0f0f5;
+  font-family: 'Poppins','sans-serif';
+}
+
+.bg-hero-overlay {
+  position: relative;
+  overflow: hidden;
+}
+
+.bg-hero-overlay::before {
+  content: "";
+  /* background: rgba(0, 0, 0, 0.1); */
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.bg-hero-overlay .content {
+  position: relative;
+  z-index: 2;
+}
