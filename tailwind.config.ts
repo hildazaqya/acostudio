@@ -11,9 +11,9 @@ const config: Config = {
       fontSize: {
         'h1': ['44px', {fontWeight: '700', lineHeight: '1.2'}],
         'h2': ['32px', {fontWeight: '600', lineHeight: '1.3'}],
-        'h3': ['28px', {fontWeight: '600', lineHeight: '1.4'}],
-        'h5': ['24px', {fontWeight: '600', lineHeight: '1.5'}],
-        'h7': ['16px', {fontWeight: '400', lineHeight: '1.6'}],
+        'h3': ['28px', {fontWeight: '500', lineHeight: '1.4'}],
+        'h5': ['24px', {fontWeight: '400', lineHeight: '1.5'}],
+        'h6': ['16px', {fontWeight: '400', lineHeight: '1.6'}],
       },
       colors: {
         'accent':'#F0F0F5',

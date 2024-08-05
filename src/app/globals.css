@@ -27,3 +27,7 @@ body {
   position: relative;
   z-index: 2;
 }
+
+.shadow-logo {
+  -webkit-filter: drop-shadow(2px 2px grey);
+}
