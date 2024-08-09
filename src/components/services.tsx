@@ -1,32 +1,23 @@
+import Image from "next/image"
+
 export default function Services() {
     return (
-        <section className="flex flex-col justify-start w-full px-[80px] mt-5">
-            <h2 className="text-h2 font-normal text-primary text-left pt-6">Layanan A.CO</h2>
-            <h2 className="text-h2 font-normal text-primary text-left pt-6">Why A.CO?</h2>
-            <div className="w-full mt-3 flex flex-row items-center px-4 py-[40px] justify-around bg-primary rounded-xl gap-x-11">
-                <div className="text-center text-accent flex flex-col justify-center items-center max-w-[250px]">
-                    <h5 className="text-h5 font-semibold">
-                        HARGA KOMPETITIF
-                    </h5>
-                    <p className="text-sm">
-                        Harga yang kami berikan akan selalu disesuaikan dengan kebutuhan proyek perhitungan struktur Anda.
-                    </p>
-                </div>
-                <div className="text-center text-accent flex flex-col justify-center items-center max-w-[250px]">
-                    <h5 className="text-h5 font-semibold">
-                        KONSULTASI GRATIS
-                    </h5>
-                    <p className="text-sm">
-                    Kami memberikan konsultasi gratis secara online melalui WA, telepon, dan email. Jadi konsultasikan ke kami kebutuhan Anda sekarang
-                    </p>
-                </div>
-                <div className="text-center text-accent flex flex-col justify-center items-center max-w-[250px]">
-                    <h5 className="text-h5 font-semibold">
-                        HASIL BERKUALITAS
-                    </h5>
-                    <p className="text-sm">
-                        Kualitas jasa desain bangunan, gambar  lengkap, dan perhitungan RAB yang sudah sesuai Standar Nasional Indonesia.
-                    </p>
+        <section className="flex flex-col justify-start w-full px-10 lg:px-[80px] mt-5">
+            <h3 className="text-h3 font-normal text-primary text-left pt-6">Scope of Work</h3>
+            <div className="w-full mt-3 flex flex-col gap-5 lg:flex-row items-center p-6 lg:p-10 justify-around bg-primary rounded-xl">
+                <ul className="text-sm text-accent list-disc">
+                    <li>Jasa Desain dan Konsep</li>
+                    <li>Jasa Gambar Kerja 2D & 3D</li>
+                    <li>Architecture drawing</li>
+                    <li>Engineering drawing</li>
+                    <li>Mechanical & Plumbing</li>
+                    <li>Visual Animasi 3D</li>
+                    <li>Jasa Perhitungan Rencana Anggaran Biaya (RAB)</li>
+                    <li>Jasa Pembangunan Fisik</li>
+                    <li>Jasa Pengawasan Lapangan</li>
+                </ul>
+                <div className="bg-accent p-7 rounded-xl">
+                    <Image src="/scopeofwork.svg" width={200} height={100} alt="scope of work" layout="responsive" />
                 </div>
             </div>
         </section>
