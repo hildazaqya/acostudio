@@ -16,7 +16,7 @@ function About() {
     ]
 
     return (
-        <section className="w-full p-10 lg:px-[80px] py-5 flex flex-col justify-center">
+        <section id="about" className="w-full p-10 lg:px-[80px] py-5 flex flex-col justify-center">
             <h3 className="text-h3 text-primary">Jasa Desain & Bangun Bangunan</h3>
             <p className="text-h6 text-[#787a81]">hamemayu hayuning bawana - Memperindah keindahan dunia</p>
             <div className="flex lg:flex-row justify-around mt-7 w-full mx-auto">

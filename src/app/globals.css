@@ -2,9 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #f0f0f5;
-  font-family: 'Poppins','sans-serif';
+  font-family: 'Poppins', 'sans-serif';
 }
 
 .bg-hero-overlay {
@@ -30,4 +34,14 @@ body {
 
 .shadow-logo {
   -webkit-filter: drop-shadow(2px 2px grey);
+}
+
+.bubble {
+  bottom: 20px;
+  right: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.whatsapp-bubble:hover {
+  transform: scale(1.1);
 }

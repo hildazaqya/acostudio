@@ -4,6 +4,7 @@ import Projects from "@/components/Projects/Projects";
 import Services from "@/components/Services/Services";
 import Price from "@/components/Price/Price";
 import Banner from "@/components/banner";
+import WhatsAppBubble from "@/components/Whatsapp";
 import { config } from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-svg-core/styles.css'
 config.autoAddCss = false
@@ -18,6 +19,7 @@ export default async function MainPage() {
       <Services />
       <Price />
       <Banner />
+      <WhatsAppBubble />
     </main>
   );
 }

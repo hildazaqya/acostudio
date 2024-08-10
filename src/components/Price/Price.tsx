@@ -13,7 +13,7 @@ export default function Price() {
         {picture: "/desainlengkap.svg", title: "Desain lengkap ekterior dan interior lengkap dengan RAB (Rencana Anggaran Biaya)", list:"Lorem"},
     ]
     return (
-        <section className="flex flex-col justify-start w-full px-10 lg:px-[80px] mt-5">
+        <section  id="price" className="flex flex-col justify-start w-full px-10 lg:px-[80px] mt-5">
              <h3 className="text-h3 font-normal text-[#AFB2BD]  text-left pt-6">An Shop Drawing</h3>
              <div className="mt-4 grid grid-cols-2 md:grid-cols-4 gap-5">
                 {priceItems.map((item,index) => (
