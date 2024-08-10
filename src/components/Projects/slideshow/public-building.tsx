@@ -43,20 +43,20 @@ export default function PublicBuilding() {
             >
                 {imagesItem.map((item, index) => (
                     <SwiperSlide key={index}>
-                        <Image
+                       <Image
                             src={item.image}
                             alt={`Image ${index + 1}`}
                             width={240}
                             height={134}
-                            layout="responsive"
-                            objectFit="cover" />
+                            style={{ objectFit: 'cover', width: '100%', height: 'auto' }}
+                        />
                     </SwiperSlide>
                 ))}
-                <div className="custom-swiper-button-prev absolute top-1/2 -translate-y-1/2 left-0 z-10 cursor-pointer">
-                    <Image width={50} height={50} src="https://img.icons8.com/ios-glyphs/30/F0F0F5/chevron-left.png" alt="chevron-left" className="shadow-logo" />
+                 <div className="custom-swiper-button-prev absolute top-1/2 -translate-y-1/2 left-0 z-10 cursor-pointer">
+                    <Image width={50} height={50} src="/chevron-left.svg" alt="chevron-left" className="shadow-logo" />
                 </div>
                 <div className="custom-swiper-button-next absolute top-1/2 -translate-y-1/2 right-0 z-10 cursor-pointer">
-                    <Image width={50} height={50} src="https://img.icons8.com/ios-glyphs/30/F0F0F5/chevron-right.png" alt="chevron-left" className="shadow-logo" />
+                    <Image width={50} height={50} src="/chevron-right.svg" alt="chevron-left" className="shadow-logo" />
                 </div>
             </Swiper>
             <h5 className="text-h5 text-center font-normal mt-4">PUBLIC BUILDING</h5>

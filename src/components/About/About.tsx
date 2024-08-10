@@ -21,7 +21,7 @@ function About() {
             <p className="text-h6 text-[#787a81]">hamemayu hayuning bawana - Memperindah keindahan dunia</p>
             <div className="flex lg:flex-row justify-around mt-7 w-full mx-auto">
                 <div className="flex flex-col lg:flex-row w-[-webkit-fill-available] justify-between gap-3 lg:gap-0">
-                    <div className="flex flex-col text-left justify-center max-w-[360px]">
+                    <div className="flex flex-col text-left justify-center max-w-full lg:max-w-[360px]">
                         <h5 className="text-xl text-primary font-semibold">a.costudioindonesia</h5>
                         <p className="text-base text-neutral">merupakan studio gambar yang menawarkan jasa konsep, desain dan estimasi  bangunan yang kompeten dan berpengalaman. </p>
                     </div>

@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function WhatsAppBubble() {
     return (
-        <div className="bubble fixed z-[1000]">
+        <div className="bubble fixed z-[1000] cursor-pointer">
             <a
                 href="https://wa.me/6281234567890" 
                 target="_blank"
@@ -10,7 +10,7 @@ export default function WhatsAppBubble() {
                 className="whatsapp-bubble"
             >
                 <Image
-                    src="https://img.icons8.com/color/96/whatsapp--v1.png"
+                    src="/whatsapp.svg"
                     alt="WhatsApp"
                     width={64}
                     height={64}
