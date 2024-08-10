@@ -2,8 +2,6 @@
 import Image from "next/image";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import 'swiper/css';
 import 'swiper/css/autoplay';
 import 'swiper/css/pagination';
@@ -49,17 +47,17 @@ export default function PrivateBuilding() {
                         <Image
                             src={item.image}
                             alt={`Image ${index + 1}`}
-                            width={400}
-                            height={300}
+                            width={240}
+                            height={134}
                             layout="responsive"
                             objectFit="cover" />
                     </SwiperSlide>
                 ))}
                 <div className="custom-swiper-button-prev absolute top-1/2 -translate-y-1/2 left-0 z-10 cursor-pointer">
-                    <FontAwesomeIcon icon={faChevronLeft} size="2xl" style={{ color: "#F0F0F5" }} />
+                    <Image width={50} height={50} src="https://img.icons8.com/ios-glyphs/30/F0F0F5/chevron-left.png" alt="chevron-left" />
                 </div>
                 <div className="custom-swiper-button-next absolute top-1/2 -translate-y-1/2 right-0 z-10 cursor-pointer">
-                    <FontAwesomeIcon icon={faChevronRight} size="2xl" style={{ color: "#F0F0F5" }} />
+                    <Image width={50} height={50} src="https://img.icons8.com/ios-glyphs/30/F0F0F5/chevron-right.png" alt="chevron-left" />
                 </div>
             </Swiper>
 
