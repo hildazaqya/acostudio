@@ -26,7 +26,7 @@ function Navbar() {
         <nav className="flex flex-col lg:flex-row justify-between py-5 px-10 lg:px-[80px] bg-gradient-to-b from-neutral to-[#A0BAD3] text-accent tracking-wide">
             <div className="flex flex-row items-center justify-between w-full lg:w-auto">
                 <Link href="/" passHref>
-                    <h5 className="text-lg sm:text-h5 text-base">A.COSTUDIOINDONESIA</h5>
+                    <h5 className="text-xl sm:text-h5 text-base">A.COSTUDIOINDONESIA</h5>
                 </Link>
                 <div className="lg:hidden">
                     <button onClick={toggleMenu} className="text-accent focus:outline-none">
