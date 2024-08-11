@@ -49,7 +49,7 @@ function About() {
             <h3 className="text-2xl sm:text-h3 font-normal text-primary text-left pt-6">Why A.CO?</h3>
             <div className="w-full mt-3 flex flex-col lg:flex-row items-center gap-5 p-6 lg:p-10 justify-around bg-primary rounded-xl gap-x-11">
                 <div className="text-center text-accent flex flex-col justify-center items-center max-w-[300px] lg:max-w-[250px]">
-                    <h5 className="text-h5 font-semibold">
+                    <h5 className="text-xl sm:text-h5 font-semibold">
                         HARGA KOMPETITIF
                     </h5>
                     <p className="text-sm">
@@ -57,7 +57,7 @@ function About() {
                     </p>
                 </div>
                 <div className="text-center text-accent flex flex-col justify-center items-center max-w-[300px] lg:max-w-[250px]">
-                    <h5 className="text-h5 font-semibold">
+                    <h5 className="text-xl sm:text-h5 font-semibold">
                         KONSULTASI GRATIS
                     </h5>
                     <p className="text-sm">
@@ -65,7 +65,7 @@ function About() {
                     </p>
                 </div>
                 <div className="text-center text-accent flex flex-col justify-center items-center max-w-[300px] lg:max-w-[250px]">
-                    <h5 className="text-h5 font-semibold">
+                    <h5 className="text-xl sm:text-h5 font-semibold">
                         HASIL BERKUALITAS
                     </h5>
                     <p className="text-sm">
