@@ -14,7 +14,7 @@ export default function Price() {
     ]
     return (
         <section  id="price" className="flex flex-col justify-start w-full px-10 lg:px-[80px] mt-5">
-             <h3 className="text-h3 font-normal text-[#AFB2BD]  text-left pt-6">An Shop Drawing</h3>
+             <h3 className="text-2xl sm:text-h3 font-normal text-[#AFB2BD]  text-left pt-6">An Shop Drawing</h3>
              <div className="mt-4 grid grid-cols-2 md:grid-cols-4 gap-5">
                 {priceItems.map((item,index) => (
                      <div key={index} className="bg-[#AFB2BD] flex flex-col p-6 rounded-xl">

@@ -22,28 +22,29 @@ export default function SemiBuilding() {
             <Swiper
                 modules={[Autoplay, Navigation, Pagination]}
                 spaceBetween={20}
-                slidesPerView={3}
+                slidesPerView={2} // Default for mobile
                 // autoplay={{
-                //     delay: 3000, // Delay between slides in milliseconds
-                //     disableOnInteraction: false, // Allows autoplay to continue after interaction
+                //     delay: 3000,
+                //     disableOnInteraction: false,
                 // }}
                 navigation={{
                     nextEl: '.custom-swiper-button-next',
                     prevEl: '.custom-swiper-button-prev',
                 }}
                 breakpoints={{
-                    780: {
-                        slidesPerView: 3
+                    640: {
+                        slidesPerView: 3, // 2 slides on small devices
+                        spaceBetween: 20,
                     },
                     1024: {
-                        slidesPerView: 4,
+                        slidesPerView: 4, // 4 slides on larger screens
                         spaceBetween: 30,
                     }
                 }}
                 pagination={{ clickable: true }}
             >
                 {imagesItem.map((item, index) => (
-                    <SwiperSlide key={index}>
+                    <SwiperSlide key={index} className="lg:!w-[240px]">
                         <Image
                             src={item.image}
                             alt={`Image ${index + 1}`}
@@ -53,15 +54,15 @@ export default function SemiBuilding() {
                         />
                     </SwiperSlide>
                 ))}
-                <div className="custom-swiper-button-prev absolute top-1/2 -translate-y-1/2 left-0 z-10 cursor-pointer">
+                <div className="hidden sm:block custom-swiper-button-prev absolute top-1/2 -translate-y-1/2 left-0 z-10 cursor-pointer">
                     <Image width={50} height={50} src="/chevron-left.svg" alt="chevron-left" className="shadow-logo" />
                 </div>
-                <div className="custom-swiper-button-next absolute top-1/2 -translate-y-1/2 right-0 z-10 cursor-pointer">
+                <div className="hidden sm:block custom-swiper-button-next absolute top-1/2 -translate-y-1/2 right-0 z-10 cursor-pointer">
                     <Image width={50} height={50} src="/chevron-right.svg" alt="chevron-left" className="shadow-logo" />
                 </div>
             </Swiper>
-            <h5 className="text-h5 text-center font-normal mt-4">SEMI BUILDING</h5>
-            <div className="h-[0.3px] w-full bg-neutral mt-5"></div>
+            <h5 className="text-lg md:text-h5 text-center font-normal mt-4">SEMI BUILDING</h5>
+            <div className="h-[0.3px] w-full bg-neutral mt-2 sm:mt-5"></div>
         </section>
     )
 }
