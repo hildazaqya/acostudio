@@ -30,7 +30,7 @@ function Navbar() {
                 </Link>
                 <div className="lg:hidden">
                     <button onClick={toggleMenu} className="text-accent focus:outline-none">
-                        {isOpen ? <XIcon /> : <HamburgerIcon />}
+                        {isOpen ? <XIcon className="transition-transform duration-300 transform rotate-180 opacity-100" /> : <HamburgerIcon className="transition-transform duration-300 transform rotate-0 opacity-100" />}
                     </button>
                 </div>
             </div>

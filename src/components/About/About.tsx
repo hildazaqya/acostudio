@@ -1,23 +1,25 @@
 import Image from "next/image";
+import Link from "next/link";
 
 type socmedItem = {
-    icon: string;
-    socmed: string;
-    title: string;
+    icon: string,
+    socmed: string,
+    title: string,
+    link:string,
     width: number,
     height: number
 }
 
 function About() {
     const socmedItems: socmedItem[] = [
-        { icon: "/socmed/whatsapp.svg", socmed: "Whatsapp Bussiness", title: "+62821-3298-8272", width: 30, height: 30 },
-        { icon: "/socmed/instagram.svg", socmed: "Instagram", title: "@a.costudioindonesia", width: 30, height: 30 },
-        { icon: "/socmed/gmail.svg", socmed: "Email", title: "a.costudioindonesia@gmail.com", width: 30, height: 30 },
+        { icon: "/socmed/whatsapp.svg", socmed: "Whatsapp Bussiness", title: "+62821-3298-8272", link: 'https://wa.me/6282132988272', width: 30, height: 30 },
+        { icon: "/socmed/instagram.svg", socmed: "Instagram", title: "@a.costudioindonesia", link: 'https://www.instagram.com/a.costudioindonesia', width: 30, height: 30 },
+        { icon: "/socmed/gmail.svg", socmed: "Email", title: "a.costudioindonesia@gmail.com", link: 'mailto:a.costudioindonesia@gmail.com', width: 30, height: 30 },
     ]
 
     return (
         <section id="about" className="w-full p-10 lg:px-[80px] py-5 flex flex-col justify-center">
-            <h3 className="text-2xl sm:text-h3 text-primary">Jasa Desain & Bangun Bangunan</h3>
+            <h3 className="text-2xl sm:text-h3 text-primary font-semibold">Jasa Desain & Bangun Bangunan</h3>
             <p className="text-sm sm:text-h6 text-[#787a81]">hamemayu hayuning bawana - Memperindah keindahan dunia</p>
             <div className="flex lg:flex-row justify-around mt-7 w-full mx-auto">
                 <div className="flex flex-col lg:flex-row w-[-webkit-fill-available] justify-between gap-3 lg:gap-0">
@@ -33,20 +35,22 @@ function About() {
                     <div className="flex flex-col lg:px-5">
                         <h5 className="text-xl sm:text-h5 font-semibold text-primary">Get Touch</h5>
                         {socmedItems.map((item, index) => (
-                            <div className="flex flex-row gap-2" key={index}>
+                            <Link href={item.link} key={index}>
+                                 <div className="flex flex-row gap-2">
                                 <Image src={item.icon} alt={item.socmed} width={item.width} height={item.height} />
                                 <div>
                                     <h6 className="text-h6 text-primary">{item.socmed}</h6>
                                     <p className="text-neutral text-sm">{item.title}</p>
                                 </div>
                             </div>
+                            </Link>
                         ))
                         }
                     </div>
                 </div>
             </div>
             <div className="hidden lg:flex h-[0.5px] w-full bg-neutral mt-5"></div>
-            <h3 className="text-2xl sm:text-h3 font-normal text-primary text-left pt-6">Why A.CO?</h3>
+            <h3 className="text-2xl sm:text-h3 font-normal text-primary text-left pt-6 font-semibold">Why A.CO?</h3>
             <div className="w-full mt-3 flex flex-col lg:flex-row items-center gap-5 p-6 lg:p-10 justify-around bg-primary rounded-xl gap-x-11">
                 <div className="text-center text-accent flex flex-col justify-center items-center max-w-[300px] lg:max-w-[250px]">
                     <h5 className="text-xl sm:text-h5 font-semibold">

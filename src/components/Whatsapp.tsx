@@ -4,7 +4,7 @@ export default function WhatsAppBubble() {
     return (
         <div className="bubble fixed z-[1000] cursor-pointer">
             <a
-                href="https://wa.me/6281234567890" 
+                href="https://wa.me/6282132988272" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="whatsapp-bubble"

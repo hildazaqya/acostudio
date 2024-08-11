@@ -1,5 +1,9 @@
+type IconProps = {
+  className?: string;
+};
+
 // Hamburger Icon Component
-export const HamburgerIcon = () => (
+export const HamburgerIcon: React.FC<IconProps> = ({ className }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="30"
@@ -28,7 +32,7 @@ export const HamburgerIcon = () => (
 );
 
 // X Icon Component
-export const XIcon = () => (
+export const XIcon: React.FC<IconProps> = ({ className }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="30"
