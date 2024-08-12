@@ -25,7 +25,15 @@ export default function RootLayout({
       <head>
         <link rel="icon" type="image/svg+xml" href="/logo.svg" />
         <link rel="icon" type="image/png" sizes="32x32" href="/logo.png" />
-        <meta name="description" content="Jasa Desain & Bangun Bangunan"></meta>
+        <meta name="title" content="A.costudioindonesia" />
+        <meta name="description" content="a.costudioindonesia merupakan studio gambar yang menawarkan jasa konsep, desain dan estimasi bangunan yang kompeten dan berpengalaman." />
+        <meta  name="keywords" content="A.costudioindonesia | Jasa Desain dan Bangun Bangunan" />
+        <meta name="author" content="a.costudioindonesia" />
+
+        <meta property="og:site_name" content="A.costudioindonesia | Jasa Desain dan Bangun Bangunan" />
+        <meta property="og:title" content="A.costudioindonesia" />
+        <meta property="og:description" content="a.costudioindonesia merupakan studio gambar yang menawarkan jasa konsep, desain dan estimasi bangunan yang kompeten dan berpengalaman." />
+        <meta name="google-site-verification" content="R2PQPE8eWdnnoah7pB9jkwBERnh5DWpeBqZS_pwV4xE" />
       </head>
       <body className={poppins.className}>
         <Navbar />
