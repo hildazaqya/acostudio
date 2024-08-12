@@ -25,6 +25,7 @@ export default function RootLayout({
       <head>
         <link rel="icon" type="image/svg+xml" href="/logo.svg" />
         <link rel="icon" type="image/png" sizes="32x32" href="/logo.png" />
+        <meta name="description" content="Jasa Desain & Bangun Bangunan"></meta>
       </head>
       <body className={poppins.className}>
         <Navbar />
