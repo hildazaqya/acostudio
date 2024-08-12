@@ -11,8 +11,8 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "a.costudio",
-  description: "",
+  title: "a.costudioindonesia",
+  description: "a.costudioindonesia merupakan studio gambar yang menawarkan jasa konsep, desain dan estimasi bangunan yang kompeten dan berpengalaman.",
 };
 70
 export default function RootLayout({
