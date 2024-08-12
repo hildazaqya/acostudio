@@ -22,7 +22,7 @@ export default function PrivateBuilding() {
             <Swiper
                 modules={[Autoplay, Navigation, Pagination]}
                 spaceBetween={20}
-                slidesPerView={2} // Default for mobile
+                slidesPerView={1.5} // Default for mobile
                 autoplay={{
                     delay: 3000,
                     disableOnInteraction: false,
@@ -33,7 +33,7 @@ export default function PrivateBuilding() {
                 }}
                 breakpoints={{
                     640: {
-                        slidesPerView: 3, // 2 slides on small devices
+                        slidesPerView: 3, // 3 slides on small devices
                         spaceBetween: 20,
                     },
                     1024: {
