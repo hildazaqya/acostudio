@@ -21,7 +21,7 @@ function Footer() {
         <footer className="bg-primary px-10 lg:px-[80px] py-5 flex flex-col">
             <div className="flex flex-col items-start lg:flex-row lg:justify-between">
                 <div className="flex flex-col">
-                    <h5 className="text-xl sm:text-h5 font-semibold text-accent">Get Touch </h5>
+                    <h5 className="text-xl sm:text-h5 font-semibold text-accent">Get Intouch </h5>
                     {socmedItems.map((item, index) => (
                         <Link href={item.link} key={index}>
                             <div className="flex flex-row gap-2">
@@ -50,7 +50,7 @@ function Footer() {
                     </div>
                 </div>
             </div>
-            <p className="text-center text-accent text-sm sm:text-base mt-5 lg:mt-2 font-normal">© copyright 2024 A.costudioindonesia. All rights reserved.</p>
+            <p className="text-center text-accent text-sm sm:text-base mt-5 lg:mt-2 font-normal">Copyright 2024 A.costudioindonesia. All rights reserved.</p>
         </footer>
     )
 }

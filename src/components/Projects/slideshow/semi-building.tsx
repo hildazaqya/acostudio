@@ -22,7 +22,9 @@ export default function SemiBuilding() {
             <Swiper
                 modules={[Autoplay, Navigation, Pagination]}
                 spaceBetween={20}
-                slidesPerView={1.5} // Default for mobile
+                slidesPerView={1.4} // Default for mobile
+                // centeredSlides={true}
+                slidesOffsetBefore={0}
                 // autoplay={{
                 //     delay: 3000,
                 //     disableOnInteraction: false,

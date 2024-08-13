@@ -20,7 +20,7 @@ function About() {
     return (
         <section id="about" className="w-full p-10 lg:px-[80px] py-5 flex flex-col justify-center">
             <h3 className="text-2xl sm:text-h3 text-primary font-semibold">Jasa Desain & Bangun Bangunan</h3>
-            <p className="text-sm sm:text-h6 text-[#787a81]">hamemayu hayuning bawana - Memperindah keindahan dunia</p>
+            <p className="text-sm sm:text-h6 text-neutral">hamemayu hayuning bawana - Memperindah keindahan dunia</p>
             <div className="flex lg:flex-row justify-around mt-7 w-full mx-auto">
                 <div className="flex flex-col lg:flex-row w-[-webkit-fill-available] justify-between gap-3 lg:gap-0">
                     <div className="flex flex-col text-left justify-center max-w-full lg:max-w-[360px]">
@@ -33,7 +33,7 @@ function About() {
                     </div>
                     <div className="border-b-[0.5px] lg:border-r-[0.5px] border-neutral lg:mb-5"></div>
                     <div className="flex flex-col lg:px-5">
-                        <h5 className="text-xl sm:text-h5 font-semibold text-primary">Get Touch</h5>
+                        <h5 className="text-xl sm:text-h5 font-semibold text-primary">Get Intouch</h5>
                         {socmedItems.map((item, index) => (
                             <Link href={item.link} key={index}>
                                  <div className="flex flex-row gap-2">

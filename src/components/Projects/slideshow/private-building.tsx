@@ -22,7 +22,8 @@ export default function PrivateBuilding() {
             <Swiper
                 modules={[Autoplay, Navigation, Pagination]}
                 spaceBetween={20}
-                slidesPerView={1.5} // Default for mobile
+                slidesPerView={1.2} // Default for mobile
+                // centeredSlides={true}
                 autoplay={{
                     delay: 3000,
                     disableOnInteraction: false,
@@ -42,6 +43,7 @@ export default function PrivateBuilding() {
                     }
                 }}
                 pagination={{ clickable: true }}
+                className="pl-2" 
             >
                 {imagesItem.map((item, index) => (
                     <SwiperSlide key={index} className="lg:!w-[240px]">
