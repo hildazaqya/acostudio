@@ -3,7 +3,7 @@ import About from "@/components/About/About";
 import Projects from "@/components/Projects/Projects";
 import Services from "@/components/Services/Services";
 import Price from "@/components/Price/Price";
-import Banner from "@/components/banner";
+import Banner from "@/components/Banner";
 import WhatsAppBubble from "@/components/Whatsapp";
 import { config } from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-svg-core/styles.css'

@@ -1,8 +1,8 @@
-import PrivateBuilding from "./slideshow/private-building"
-import SemiBuilding from "./slideshow/semi-building"
-import PublicBuilding from "./slideshow/public-building"
-import PublicLearning from "./slideshow/public-learning"
-import Interior from "./slideshow/interior"
+import PrivateBuilding from "./slideshow/PrivateBuilding"
+import SemiBuilding from "./slideshow/SemiBuilding"
+import PublicBuilding from "./slideshow/PublicBuilding"
+import PublicLearning from "./slideshow/PublicLearning"
+import Interior from "./slideshow/Interior"
 
 export default function Projects() {
     return (

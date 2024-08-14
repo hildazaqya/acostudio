@@ -5,7 +5,7 @@ type socmedItem = {
     icon: string,
     socmed: string,
     title: string,
-    link:string,
+    link: string,
     width: number,
     height: number
 }
@@ -33,19 +33,21 @@ function About() {
                     </div>
                     <div className="border-b-[0.5px] lg:border-r-[0.5px] border-neutral lg:mb-5"></div>
                     <div className="flex flex-col lg:px-5">
-                        <h5 className="text-xl sm:text-h5 font-semibold text-primary">Get Intouch</h5>
-                        {socmedItems.map((item, index) => (
-                            <Link href={item.link} key={index}>
-                                 <div className="flex flex-row gap-2">
-                                <Image src={item.icon} alt={item.socmed} width={item.width} height={item.height} />
-                                <div>
-                                    <h6 className="text-h6 text-primary">{item.socmed}</h6>
-                                    <p className="text-neutral text-sm">{item.title}</p>
-                                </div>
-                            </div>
-                            </Link>
-                        ))
-                        }
+                        <h5 className="text-xl font-semibold text-primary sm:text-h5">Get in Touch</h5>
+                        <div className="flex flex-col gap-y-2">
+                            {socmedItems.map((item, index) => (
+                                <Link href={item.link} key={index}>
+                                    <div className="flex flex-row gap-2">
+                                        <Image src={item.icon} alt={item.socmed} width={item.width} height={item.height} />
+                                        <div>
+                                            <h6 className="text-sm sm:text-h6 text-primary">{item.socmed}</h6>
+                                            <p className="text-neutral text-xs sm:text-sm">{item.title}</p>
+                                        </div>
+                                    </div>
+                                </Link>
+                            ))
+                            }
+                        </div>
                     </div>
                 </div>
             </div>

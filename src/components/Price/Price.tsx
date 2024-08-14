@@ -10,7 +10,7 @@ export default function Price() {
         {picture: "/desainvisual.svg", title: "Desain visual & animasi bangunan", list:"Lorem"},
         {picture: "/desainbangunan.svg", title: "Desain bangunan gambar kerja", list:"Lorem"},
         {picture: "/desaininterior.svg", title: "Desain interior bangunan", list:"Lorem"},
-        {picture: "/desainlengkap.svg", title: "Desain lengkap ekterior dan interior lengkap dengan RAB (Rencana Anggaran Biaya)", list:"Lorem"},
+        {picture: "/desainlengkap.svg", title: "Desain lengkap eksterior dan interior lengkap dengan RAB (Rencana Anggaran Biaya)", list:"Lorem"},
     ]
     return (
         <section  id="price" className="flex flex-col justify-start w-full px-10 lg:px-[80px] mt-5">

@@ -1,7 +1,7 @@
 'use client'
 import { useState } from "react";
 import Link from 'next/link';
-import { HamburgerIcon, XIcon } from "./navbarIcon";
+import { HamburgerIcon, XIcon } from "./NavbarIcon";
 
 type NavItem = {
     href: string;
