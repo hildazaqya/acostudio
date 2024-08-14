@@ -40,6 +40,7 @@ export default function SliderTemplate({
                 modules={[Autoplay, Navigation, Pagination]}
                 spaceBetween={20}
                 slidesPerView={1.2} // Default for mobile
+                loop={true}
                 autoplay={
                     autoplay
                         ? {
