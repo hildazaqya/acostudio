@@ -67,7 +67,7 @@ export default function SliderTemplate({
                 pagination={{ clickable: true }}
             >
                 {imagesItem.map((item, index) => (
-                    <SwiperSlide key={index} className="lg:!w-[240px]">
+                    <SwiperSlide key={index}>
                         <ImageWithPlaceholder src={item.image} alt={`Image ${index + 1}`} />
                     </SwiperSlide>
                 ))}
@@ -98,6 +98,7 @@ function ImageWithPlaceholder({ src, alt }: ImageWithPlaceholderProps) {
                 alt={alt}
                 width={240}
                 height={134}
+                loading ='lazy'
                 style={{ objectFit: 'cover', width: '100%', height: 'auto' }}
                 onLoad={() => setIsLoading(false)}
                 className={`transition-opacity duration-500 ${isLoading ? 'opacity-0': 'opacity-100'}`}
